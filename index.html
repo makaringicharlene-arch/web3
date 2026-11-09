@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>A Birthday Quiz for Hitekani</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="login.js" defer></script>
+</head>
+<body>
+  <main class="card login-card">
+    <p class="eyebrow">A private birthday invitation</p>
+    <h1>A little surprise awaits</h1>
+    <p class="intro">Answer all five questions to unlock your birthday surprise.</p>
+
+    <form id="loginForm" class="login-form">
+      <fieldset class="quiz-question">
+        <legend>1. What's my favourite music genre?</legend>
+        <label><input type="radio" name="question1" value="A" required> A. R&amp;B</label>
+        <label><input type="radio" name="question1" value="B"> B. Amapiano</label>
+        <label><input type="radio" name="question1" value="C"> C. Hip-hop</label>
+        <label><input type="radio" name="question1" value="D"> D. Xigaza</label>
+      </fieldset>
+
+      <fieldset class="quiz-question">
+        <legend>2. Complete the sentence: “One day, I want to own a soccer club for ______.”</legend>
+        <label><input type="radio" name="question2" value="A" required> A. Babies</label>
+        <label><input type="radio" name="question2" value="B"> B. Toddlers</label>
+        <label><input type="radio" name="question2" value="C"> C. Grandmothers</label>
+        <label><input type="radio" name="question2" value="D"> D. Dogs</label>
+      </fieldset>
+
+      <fieldset class="quiz-question">
+        <legend>3. What's my favourite university module?</legend>
+        <label><input type="radio" name="question3" value="A" required> A. Mathematics</label>
+        <label><input type="radio" name="question3" value="B"> B. Statistics</label>
+        <label><input type="radio" name="question3" value="C"> C. Computer Science</label>
+        <label><input type="radio" name="question3" value="D"> D. Calc</label>
+      </fieldset>
+
+      <fieldset class="quiz-question">
+        <legend>4. What's my favourite KFC meal?</legend>
+        <label><input type="radio" name="question4" value="A" required> A. Streetwise 2</label>
+        <label><input type="radio" name="question4" value="B"> B. Zinger Burger</label>
+        <label><input type="radio" name="question4" value="C"> C. All Star Box</label>
+        <label><input type="radio" name="question4" value="D"> D. Dunked Wings</label>
+      </fieldset>
+
+      <fieldset class="quiz-question">
+        <legend>5. Who is my football crush?</legend>
+        <label><input type="radio" name="question5" value="A" required> A. Kylian Mbappé</label>
+        <label><input type="radio" name="question5" value="B"> B. Ousmane Dembélé</label>
+        <label><input type="radio" name="question5" value="C"> C. Vinícius Júnior</label>
+        <label><input type="radio" name="question5" value="D"> D. Erling Haaland</label>
+      </fieldset>
+
+      <button class="yes-button" type="submit">Unlock the birthday surprise</button>
+      <p id="loginMessage" class="login-message" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <dialog class="birthday-dialog" id="birthdayDialog" aria-labelledby="birthdayTitle">
+    <p class="eyebrow">A celebration just for you</p>
+    <h2 id="birthdayTitle">Happy Birthday, Hitekani!</h2>
+    <p>Wishing you a beautiful day filled with love, laughter, and everything you deserve.</p>
+    <button class="yes-button" id="continueButton" type="button">Open your birthday messages</button>
+  </dialog>
+</body>
+</html>

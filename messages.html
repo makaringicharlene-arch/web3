@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Message Book</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="messages.js" defer></script>
+</head>
+<body>
+  <main class="card message-card">
+    <div class="top-heart" aria-hidden="true">A Day to Celebrate</div>
+    <p class="eyebrow">A little love from your friends</p>
+    <h1>Birthday message book</h1>
+    <p class="intro">A collection of birthday wishes and thoughtful notes, chosen especially for you.</p>
+
+    <section class="message-list" aria-labelledby="messagesTitle">
+      <h2 id="messagesTitle">Birthday wishes <span id="messageCount">(0)</span></h2>
+      <p id="emptyMessages" class="empty-messages">Your birthday wishes will be gathered here.</p>
+      <div id="messagesList" class="messages-list"></div>
+    </section>
+
+    <section class="envelope-section" aria-label="One more birthday surprise">
+      <p class="envelope-prompt">And at the very end, one more little surprise.</p>
+      <button class="envelope-button" id="envelopeButton" type="button" aria-expanded="false" aria-controls="finalSurprise">
+        <span class="envelope" aria-hidden="true">
+          <span class="envelope-flap"></span>
+          <span class="envelope-seal" aria-hidden="true"></span>
+        </span>
+        <span class="envelope-label">Open your birthday letter</span>
+      </button>
+      <div id="confetti" class="message-confetti" aria-hidden="true"></div>
+      <article id="finalSurprise" class="final-surprise invitation-letter" hidden>
+        <p class="letter-kicker">A Private Birthday Correspondence</p>
+        <h2>A Most Delightful Surprise</h2>
+        <p>Dearest reader,</p>
+        <p>We would love to invite you on a piercing date at <strong>Pierced by Zulu</strong> on <strong>November 11</strong>. Together, we can choose a little treasure that feels just right and make a memory worthy of the occasion.</p>
+        <p>As always, the choice is entirely yours. It would be our greatest pleasure to celebrate with you.</p>
+        <p class="letter-signoff">With affection and anticipation,<br>Your birthday date</p>
+        <div class="buttons letter-buttons">
+          <button class="yes-button" id="yesButton" type="button">It would be my pleasure</button>
+          <button class="maybe-button" id="maybeButton" type="button">I shall consider it</button>
+        </div>
+        <p id="reply" class="letter-reply" aria-live="polite"></p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

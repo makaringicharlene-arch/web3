@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Piercing Date Invitation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <div class="top-heart">A Birthday Invitation</div>
+    <p class="eyebrow">A birthday invitation</p>
+
+    <h1>Birthday girl, let's get pierced!</h1>
+
+    <p class="intro">
+      I have a little birthday idea for us.<br>
+      How about celebrating your special day with a
+      <strong>piercing date</strong>? A little sparkle, a little adventure,
+      and a lovely memory to keep.
+    </p>
+
+    <section class="details">
+      <p><strong>The day:</strong> November 11</p>
+      <p><strong>The studio:</strong> Pierced by Zulu</p>
+      <p><strong>The occasion:</strong> A lovely memory together</p>
+    </section>
+
+    <section class="sparkle-picker" aria-labelledby="sparkle-title">
+      <h2 id="sparkle-title">Choose a style</h2>
+      <p>What are you feeling? You can change your mind anytime.</p>
+      <div class="sparkle-options" role="group" aria-label="Choose a piercing style">
+        <button class="sparkle-option" type="button" data-choice="Tiny stud">Tiny stud</button>
+        <button class="sparkle-option" type="button" data-choice="Little hoop">Little hoop</button>
+        <button class="sparkle-option" type="button" data-choice="A surprise">A surprise</button>
+      </div>
+      <p id="choiceReply" class="choice-reply" aria-live="polite">Your choice is totally up to you.</p>
+      <button class="surprise-button" id="surpriseButton" type="button">Suggest a style</button>
+    </section>
+
+    <p class="question"><strong>So… are you in?</strong></p>
+
+    <div class="buttons">
+      <button class="yes-button" id="yesButton">Yes, let's go</button>
+      <button class="maybe-button" id="maybeButton">I need to think</button>
+    </div>
+
+    <p id="reply" aria-live="polite"></p>
+    <div id="celebration" class="celebration" aria-hidden="true"></div>
+    <button class="reveal-button" id="revealButton" type="button" aria-expanded="false" aria-controls="hiddenNote">
+      One more little surprise
+    </button>
+    <p class="hidden-note" id="hiddenNote" hidden>
+      Your company is the best birthday gift. The piercing is just a little extra sparkle.
+    </p>
+
+    <a class="messages-link" href="messages.html">Back to the birthday messages</a>
+
+    <p class="footnote">
+      Your birthday, your choice of piercing. No pressure, just a thoughtful invitation.
+    </p>
+  </main>
+</body>
+</html>
